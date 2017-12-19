@@ -7,7 +7,7 @@
 	width: 190mm;
 	height: 277mm;
 	background: $color-bg;
-	outline: $test;
+	//outline: $test;
 	padding: 10mm;
 	@media print {
 		padding: 0;
@@ -20,7 +20,7 @@ header, main, footer {
 	display: inline-block;
 	width: 180mm;
 	margin-left: 10mm;
-	outline: $test;
+	//outline: $test;
 }
 
 #photo {
@@ -28,14 +28,14 @@ header, main, footer {
 	vertical-align: top;
 	width: 60mm;
 	height: 60mm;
-	outline: $test;
+	//outline: $test;
 }
 #info {
 	display: inline-block;
 	vertical-align: top;
 	width: 120mm;
 	height: 60mm;
-	outline: $test;
+	//outline: $test;
 	overflow: hidden;
 }
 #profilephoto {
@@ -55,6 +55,86 @@ header, main, footer {
 #about, #credits {
 	display: inline-block;
 	vertical-align: top;
-	width: 60mm;
-	outline: $test;
+	width: 50mm;
+	//outline: $test;
+}
+#credits {
+	width: 70mm;
+}
+
+.cred {
+	display: block;
+	position: relative;
+	margin-left: $basic * 3;
+	line-height: $basic * 2;
+}
+.birth {
+	&::before {
+		content: '\f1fd';
+		font-family: FontAwesome;
+		font-size: 4mm;
+		text-align: center;
+		position: absolute;
+		width: $basic * 2;
+		height: $basic * 2;
+		top: 0;
+		left: -7mm;
+		color: $color-main;
+	}
+}
+.location {
+	&::before {
+		content: '\f041';
+		font-family: FontAwesome;
+		font-size: 6mm;
+		text-align: center;
+		position: absolute;
+		width: $basic * 2;
+		height: $basic * 2;
+		top: 0;
+		left: -7mm;
+		color: $color-main;
+	}
+}
+.cell {
+	&::before {
+		content: '\f10b';
+		font-family: FontAwesome;
+		font-size: 6mm;
+		text-align: center;
+		position: absolute;
+		width: $basic * 2;
+		height: $basic * 2;
+		top: 0;
+		left: -7mm;
+		color: $color-main;
+	}
+}
+.email {
+	&::before {
+		content: '\f1fa';
+		font-family: FontAwesome;
+		font-size: 5mm;
+		text-align: center;
+		position: absolute;
+		width: $basic * 2;
+		height: $basic * 2;
+		top: 0;
+		left: -7mm;
+		color: $color-main;
+	}
+}
+.skype {
+	&::before {
+		content: '\f17e';
+		font-family: FontAwesome;
+		font-size: 5mm;
+		text-align: center;
+		position: absolute;
+		width: $basic * 2;
+		height: $basic * 2;
+		top: 0;
+		left: -7mm;
+		color: $color-main;
+	}
 }

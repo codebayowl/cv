@@ -37,7 +37,14 @@ h3 {
 p {
   font-family: "Roboto", sans-serif;
   text-indent: 3.5mm;
+  line-height: 5.25mm;
   padding: 0 3.5mm;
+  color: #1f1f1f;
+}
+
+span {
+  font-family: "Roboto", sans-serif;
+  line-height: 5.25mm;
   color: #1f1f1f;
 }
 
@@ -48,7 +55,6 @@ p {
   width: 190mm;
   height: 277mm;
   background: #f2f2f2;
-  outline: 1px dashed red;
   padding: 10mm;
 }
 
@@ -64,7 +70,6 @@ header, main, footer {
   display: inline-block;
   width: 180mm;
   margin-left: 10mm;
-  outline: 1px dashed red;
 }
 
 #photo {
@@ -72,7 +77,6 @@ header, main, footer {
   vertical-align: top;
   width: 60mm;
   height: 60mm;
-  outline: 1px dashed red;
 }
 
 #info {
@@ -80,7 +84,6 @@ header, main, footer {
   vertical-align: top;
   width: 120mm;
   height: 60mm;
-  outline: 1px dashed red;
   overflow: hidden;
 }
 
@@ -101,6 +104,81 @@ header, main, footer {
 #about, #credits {
   display: inline-block;
   vertical-align: top;
-  width: 60mm;
-  outline: 1px dashed red;
+  width: 50mm;
+}
+
+#credits {
+  width: 70mm;
+}
+
+.cred {
+  display: block;
+  position: relative;
+  margin-left: 10.5mm;
+  line-height: 7mm;
+}
+
+.birth::before {
+  content: '\f1fd';
+  font-family: FontAwesome;
+  font-size: 4mm;
+  text-align: center;
+  position: absolute;
+  width: 7mm;
+  height: 7mm;
+  top: 0;
+  left: -7mm;
+  color: #43739b;
+}
+
+.location::before {
+  content: '\f041';
+  font-family: FontAwesome;
+  font-size: 6mm;
+  text-align: center;
+  position: absolute;
+  width: 7mm;
+  height: 7mm;
+  top: 0;
+  left: -7mm;
+  color: #43739b;
+}
+
+.cell::before {
+  content: '\f10b';
+  font-family: FontAwesome;
+  font-size: 6mm;
+  text-align: center;
+  position: absolute;
+  width: 7mm;
+  height: 7mm;
+  top: 0;
+  left: -7mm;
+  color: #43739b;
+}
+
+.email::before {
+  content: '\f1fa';
+  font-family: FontAwesome;
+  font-size: 5mm;
+  text-align: center;
+  position: absolute;
+  width: 7mm;
+  height: 7mm;
+  top: 0;
+  left: -7mm;
+  color: #43739b;
+}
+
+.skype::before {
+  content: '\f17e';
+  font-family: FontAwesome;
+  font-size: 5mm;
+  text-align: center;
+  position: absolute;
+  width: 7mm;
+  height: 7mm;
+  top: 0;
+  left: -7mm;
+  color: #43739b;
 }

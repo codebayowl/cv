@@ -27,6 +27,13 @@ h3 {
 p {
 	font-family: $font-usual;
 	text-indent: $basic;
+	line-height: $basic * 1.5;
 	padding: 0 $basic;
+	color: $color-dark;
+}
+
+span {
+	font-family: $font-usual;
+	line-height: $basic * 1.5;
 	color: $color-dark;
 }
