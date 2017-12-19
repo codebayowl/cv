@@ -36,6 +36,20 @@ header, main, footer {
 	width: 120mm;
 	height: 60mm;
 	outline: $test;
+	overflow: hidden;
+}
+#profilephoto {
+	width: 50mm;
+	height: 50mm;
+	margin: 3mm;
+	border-style: solid;
+	border-width: 2mm;
+	border-radius: 50%;
+	border-color: $color-main;
+	background-color: $color-dark;
+	background-image: url(../img/profile.jpg);
+	background-size: cover;
+	image-rendering: -webkit-optimize-contrast;
 }
 //#name {}
 #about, #credits {
