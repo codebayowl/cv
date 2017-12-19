@@ -1,3 +1,31 @@
+p, h1, h2, h3, h4, h5, h6, a, span {font-size: $basic;}
+
+
 html {
 	font-size: $basic;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-heading;
+	color: $color-main;
+}
+
+h1 {
+	font-weight: 200;
+	font-size: $basic * 3;
+	line-height: $basic * 5;
+	text-indent: $basic;
+}
+
+h3 {
+	font-weight: 400;
+	font-size: 5mm;
+	margin: 0 $basic;
+	border-bottom: .5mm solid;
+}
+
+p {
+	font-family: $font-usual;
+	text-indent: $basic;
+	padding: 0 $basic;
 }
