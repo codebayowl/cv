@@ -20,7 +20,7 @@ header, main, footer {
 	display: inline-block;
 	width: 180mm;
 	margin-left: 10mm;
-	//outline: $test;
+	outline: $test;
 }
 
 #photo {
@@ -137,4 +137,22 @@ header, main, footer {
 		left: -7mm;
 		color: $color-main;
 	}
+}
+
+main {
+	height: 200mm;
+	color: $color-dark;
+}
+aside {
+	width: 60mm;
+	height: 60mm;
+	background-color: darken($color-bg, 10%);
+}
+section {
+	width: 120mm;
+}
+footer {
+	height: 16mm;
+	background-color: $color-main;
+	color: $color-bg;
 }

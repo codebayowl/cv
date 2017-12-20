@@ -70,6 +70,7 @@ header, main, footer {
   display: inline-block;
   width: 180mm;
   margin-left: 10mm;
+  outline: 1px dashed red;
 }
 
 #photo {
@@ -181,4 +182,25 @@ header, main, footer {
   top: 0;
   left: -7mm;
   color: #43739b;
+}
+
+main {
+  height: 200mm;
+  color: #1f1f1f;
+}
+
+aside {
+  width: 60mm;
+  height: 60mm;
+  background-color: #d9d9d9;
+}
+
+section {
+  width: 120mm;
+}
+
+footer {
+  height: 16mm;
+  background-color: #43739b;
+  color: #f2f2f2;
 }
