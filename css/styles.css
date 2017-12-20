@@ -15,6 +15,17 @@ html {
   font-size: 3.5mm;
 }
 
+body {
+  background-color: #c3c3c3;
+}
+
+@media print {
+  body {
+    background-image: none;
+    background-color: transparent;
+  }
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
   color: #10b0ca;
@@ -27,11 +38,29 @@ h1 {
   text-indent: 3.5mm;
 }
 
+h2 {
+  font-weight: 700;
+  font-size: 5mm;
+  margin: 0 3.5mm;
+  padding-top: 7mm;
+  margin-left: 14mm;
+  text-transform: uppercase;
+}
+
 h3 {
   font-weight: 400;
   font-size: 5mm;
   margin: 0 3.5mm;
   border-bottom: .5mm solid;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 4mm;
+  margin: 0 3.5mm;
+  text-transform: uppercase;
+  padding-top: 2mm;
 }
 
 p {
@@ -70,7 +99,6 @@ header, main, footer {
   display: inline-block;
   width: 180mm;
   margin-left: 10mm;
-  outline: 1px dashed red;
 }
 
 #photo {
@@ -79,6 +107,8 @@ header, main, footer {
   width: 60mm;
   height: 60mm;
   background-color: #3b4044;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
 }
 
 #info {
@@ -101,6 +131,8 @@ header, main, footer {
   background-image: url(../img/profile.jpg);
   background-size: cover;
   image-rendering: -webkit-optimize-contrast;
+  -webkit-box-shadow: 0 0 8mm rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 8mm rgba(0, 0, 0, 0.4);
 }
 
 #about, #credits {
@@ -197,14 +229,80 @@ aside {
   background-color: #3b4044;
 }
 
+.skill {
+  display: block;
+  position: relative;
+  margin-left: 7mm;
+  line-height: 7mm;
+  color: #c3c3c3;
+}
+
+.ru, .ua, .en, .lt {
+  margin-left: 14mm;
+}
+
 section {
   display: inline-block;
   vertical-align: top;
   width: 120mm;
 }
 
+#exp h2 {
+  position: relative;
+}
+
+#exp h2::before {
+  content: '\f0b1';
+  font-family: FontAwesome;
+  font-size: 6mm;
+  text-align: center;
+  position: absolute;
+  width: 10.5mm;
+  height: 10.5mm;
+  padding-top: 7mm;
+  top: 0;
+  left: -10.5mm;
+  color: #10b0ca;
+}
+
+#educ h2 {
+  position: relative;
+}
+
+#educ h2::before {
+  content: '\f19d';
+  font-family: FontAwesome;
+  font-size: 6mm;
+  text-align: center;
+  position: absolute;
+  width: 10.5mm;
+  height: 10.5mm;
+  padding-top: 7mm;
+  top: 0;
+  left: -10.5mm;
+  color: #10b0ca;
+}
+
+#cert h2 {
+  position: relative;
+}
+
+#cert h2::before {
+  content: '\f0a3';
+  font-family: FontAwesome;
+  font-size: 6mm;
+  text-align: center;
+  position: absolute;
+  width: 10.5mm;
+  height: 10.5mm;
+  padding-top: 7mm;
+  top: 0;
+  left: -10.5mm;
+  color: #10b0ca;
+}
+
 footer {
-  height: 16mm;
+  height: 16.9mm;
   background-color: #10b0ca;
   color: #ebebeb;
 }

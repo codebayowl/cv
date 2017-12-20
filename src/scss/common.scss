@@ -5,6 +5,14 @@ html {
 	font-size: $basic;
 }
 
+body {
+	background-color: $color-light;
+	@media print {
+		background-image: none;
+		background-color: transparent;
+	}
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: $font-heading;
 	color: $color-main;
@@ -17,11 +25,31 @@ h1 {
 	text-indent: $basic;
 }
 
+h2 {
+	font-weight: 700;
+	font-size: 5mm;
+	margin: 0 $basic;
+	padding-top: $basic * 2;
+	margin-left: $basic * 4;
+	//border-bottom: .5mm solid;
+	text-transform: uppercase;
+}
+
 h3 {
 	font-weight: 400;
 	font-size: 5mm;
 	margin: 0 $basic;
 	border-bottom: .5mm solid;
+	text-transform: uppercase;
+}
+
+h4 {
+	font-weight: 400;
+	font-size: 4mm;
+	margin: 0 $basic;
+	//border-bottom: .5mm solid;
+	text-transform: uppercase;
+	padding-top: 2mm;
 }
 
 p {

@@ -20,7 +20,7 @@ header, main, footer {
 	display: inline-block;
 	width: 180mm;
 	margin-left: 10mm;
-	outline: $test;
+	//outline: $test;
 }
 
 #photo {
@@ -29,6 +29,8 @@ header, main, footer {
 	width: 60mm;
 	height: 60mm;
 	background-color: $color-dark;
+	border-top-left-radius: 50%;
+	border-top-right-radius: 50%;
 	//outline: $test;
 }
 #info {
@@ -51,6 +53,7 @@ header, main, footer {
 	background-image: url(../img/profile.jpg);
 	background-size: cover;
 	image-rendering: -webkit-optimize-contrast;
+	box-shadow: 0 0 8mm rgba(0,0,0,.4);
 }
 //#name {}
 #about, #credits {
@@ -150,13 +153,77 @@ aside {
 	width: 60mm;
 	background-color: $color-dark;
 }
+.skill {
+	display: block;
+	position: relative;
+	margin-left: $basic * 2;
+	line-height: $basic * 2;
+	color: $color-light;
+}
+.ru, .ua, .en, .lt {
+	margin-left: $basic * 4;
+}
 section {
 	display: inline-block;
 	vertical-align: top;
 	width: 120mm;
 }
+
+#exp h2{
+	position: relative;
+	&::before {
+		content: '\f0b1';
+		font-family: FontAwesome;
+		font-size: 6mm;
+		text-align: center;
+		position: absolute;
+		width: $basic * 3;
+		height: $basic * 3;
+		padding-top: $basic * 2;
+		top: 0;
+		left: -$basic * 3;
+		color: $color-main;
+	}
+}
+
+#educ h2{
+	position: relative;
+	&::before {
+		content: '\f19d';
+		font-family: FontAwesome;
+		font-size: 6mm;
+		text-align: center;
+		position: absolute;
+		width: $basic * 3;
+		height: $basic * 3;
+		padding-top: $basic * 2;
+		top: 0;
+		left: -$basic * 3;
+		color: $color-main;
+	}
+}
+
+#cert h2{
+	position: relative;
+	&::before {
+		content: '\f0a3';
+		font-family: FontAwesome;
+		font-size: 6mm;
+		text-align: center;
+		position: absolute;
+		width: $basic * 3;
+		height: $basic * 3;
+		padding-top: $basic * 2;
+		top: 0;
+		left: -$basic * 3;
+		color: $color-main;
+	}
+}
+
+
 footer {
-	height: 16mm;
+	height: 16.9mm;
 	background-color: $color-main;
 	color: $color-bg;
 }
+
