@@ -9,6 +9,7 @@
 	background: $color-bg;
 	//outline: $test;
 	padding: 10mm;
+	box-shadow: 0 0 20mm rgba(0,0,0,.3);
 	@media print {
 		padding: 0;
 		background-image: none;
@@ -151,6 +152,7 @@ aside {
 	display: inline-block;
 	vertical-align: top;
 	width: 60mm;
+	height: 200mm;
 	background-color: $color-dark;
 }
 .skill {
