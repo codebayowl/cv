@@ -17,7 +17,7 @@ html {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
-  color: #43739b;
+  color: #10b0ca;
 }
 
 h1 {
@@ -39,13 +39,13 @@ p {
   text-indent: 3.5mm;
   line-height: 5.25mm;
   padding: 0 3.5mm;
-  color: #1f1f1f;
+  color: #3b4044;
 }
 
 span {
   font-family: "Roboto", sans-serif;
   line-height: 5.25mm;
-  color: #1f1f1f;
+  color: #3b4044;
 }
 
 /* Main styles */
@@ -54,7 +54,7 @@ span {
   margin: 0 auto;
   width: 190mm;
   height: 277mm;
-  background: #f2f2f2;
+  background: #ebebeb;
   padding: 10mm;
 }
 
@@ -78,6 +78,7 @@ header, main, footer {
   vertical-align: top;
   width: 60mm;
   height: 60mm;
+  background-color: #3b4044;
 }
 
 #info {
@@ -95,8 +96,8 @@ header, main, footer {
   border-style: solid;
   border-width: 2mm;
   border-radius: 50%;
-  border-color: #43739b;
-  background-color: #1f1f1f;
+  border-color: #10b0ca;
+  background-color: #3b4044;
   background-image: url(../img/profile.jpg);
   background-size: cover;
   image-rendering: -webkit-optimize-contrast;
@@ -129,7 +130,7 @@ header, main, footer {
   height: 7mm;
   top: 0;
   left: -7mm;
-  color: #43739b;
+  color: #10b0ca;
 }
 
 .location::before {
@@ -142,7 +143,7 @@ header, main, footer {
   height: 7mm;
   top: 0;
   left: -7mm;
-  color: #43739b;
+  color: #10b0ca;
 }
 
 .cell::before {
@@ -155,7 +156,7 @@ header, main, footer {
   height: 7mm;
   top: 0;
   left: -7mm;
-  color: #43739b;
+  color: #10b0ca;
 }
 
 .email::before {
@@ -168,7 +169,7 @@ header, main, footer {
   height: 7mm;
   top: 0;
   left: -7mm;
-  color: #43739b;
+  color: #10b0ca;
 }
 
 .skype::before {
@@ -181,26 +182,29 @@ header, main, footer {
   height: 7mm;
   top: 0;
   left: -7mm;
-  color: #43739b;
+  color: #10b0ca;
 }
 
 main {
   height: 200mm;
-  color: #1f1f1f;
+  color: #3b4044;
 }
 
 aside {
+  display: inline-block;
+  vertical-align: top;
   width: 60mm;
-  height: 60mm;
-  background-color: #d9d9d9;
+  background-color: #3b4044;
 }
 
 section {
+  display: inline-block;
+  vertical-align: top;
   width: 120mm;
 }
 
 footer {
   height: 16mm;
-  background-color: #43739b;
-  color: #f2f2f2;
+  background-color: #10b0ca;
+  color: #ebebeb;
 }

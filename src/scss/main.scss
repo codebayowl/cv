@@ -28,6 +28,7 @@ header, main, footer {
 	vertical-align: top;
 	width: 60mm;
 	height: 60mm;
+	background-color: $color-dark;
 	//outline: $test;
 }
 #info {
@@ -144,11 +145,14 @@ main {
 	color: $color-dark;
 }
 aside {
+	display: inline-block;
+	vertical-align: top;
 	width: 60mm;
-	height: 60mm;
-	background-color: darken($color-bg, 10%);
+	background-color: $color-dark;
 }
 section {
+	display: inline-block;
+	vertical-align: top;
 	width: 120mm;
 }
 footer {
