@@ -1,4 +1,4 @@
-p, h1, h2, h3, h4, h5, h6, a, span {font-size: $basic;}
+p, h1, h2, h3, h4, h5, h6, a, span, dt, dd {font-size: $basic;}
 
 
 html {
@@ -65,4 +65,19 @@ span {
 	font-family: $font-usual;
 	line-height: $basic * 1.5;
 	color: $color-dark;
+}
+dl {
+	margin: 0 $basic * 3;
+}
+dt {
+	font-weight: bold;
+	padding: $basic 0 0 0;
+	font-family: $font-heading;
+}
+dd {
+	border-bottom: 0.1mm solid $color-neutral;
+	font-family: $font-usual;
+	&:last-child {
+		border-bottom: none;
+	}
 }

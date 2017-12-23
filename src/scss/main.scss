@@ -187,6 +187,39 @@ section {
 		color: $color-main;
 	}
 }
+.logo {
+	width: $basic * 4;
+	display: inline-block;
+	vertical-align: top;
+	height: $basic * 4;
+	background: $color-main;
+}
+.position {
+	display: inline-block;
+	vertical-align: top;
+}
+.posdescr {}
+.company {
+	
+	display: inline-block;
+	vertical-align: top;
+}
+.period {
+	
+	display: inline-block;
+	vertical-align: top;
+}
+.description {
+	
+	display: inline-block;
+	vertical-align: top;
+}
+.country {
+	
+	display: inline-block;
+	vertical-align: top;
+}
+
 
 #educ h2{
 	position: relative;
@@ -221,8 +254,13 @@ section {
 		color: $color-main;
 	}
 }
-
-
+.place, .valid {
+	display: block;
+}
+.years {
+	display: block;
+	color: $color-neutral;
+}
 footer {
 	height: 16.9mm;
 	background-color: $color-main;

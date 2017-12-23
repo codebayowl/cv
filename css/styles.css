@@ -7,7 +7,7 @@
   font-size: 0;
 }
 
-p, h1, h2, h3, h4, h5, h6, a, span {
+p, h1, h2, h3, h4, h5, h6, a, span, dt, dd {
   font-size: 3.5mm;
 }
 
@@ -76,6 +76,25 @@ span {
   font-family: "Roboto", sans-serif;
   line-height: 5.25mm;
   color: #3b4044;
+}
+
+dl {
+  margin: 0 10.5mm;
+}
+
+dt {
+  font-weight: bold;
+  padding: 3.5mm 0 0 0;
+  font-family: "Raleway", sans-serif;
+}
+
+dd {
+  border-bottom: 0.1mm solid #a0a0a0;
+  font-family: "Roboto", sans-serif;
+}
+
+dd:last-child {
+  border-bottom: none;
 }
 
 /* Main styles */
@@ -269,6 +288,39 @@ section {
   color: #10b0ca;
 }
 
+.logo {
+  width: 14mm;
+  display: inline-block;
+  vertical-align: top;
+  height: 14mm;
+  background: #10b0ca;
+}
+
+.position {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.company {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.period {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.description {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.country {
+  display: inline-block;
+  vertical-align: top;
+}
+
 #educ h2 {
   position: relative;
 }
@@ -303,6 +355,15 @@ section {
   top: 0;
   left: -10.5mm;
   color: #10b0ca;
+}
+
+.place, .valid {
+  display: block;
+}
+
+.years {
+  display: block;
+  color: #a0a0a0;
 }
 
 footer {
