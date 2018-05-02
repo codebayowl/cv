@@ -37,13 +37,16 @@ h1 {
   font-size: 10.5mm;
   line-height: 17.5mm;
   text-indent: 3.5mm;
+  /*@media print {
+		color: $color-dark;
+	}*/
 }
 
 h2 {
   font-weight: 700;
   font-size: 5mm;
   margin: 0 3.5mm;
-  padding-top: 7mm;
+  padding-top: 5.25mm;
   margin-left: 14mm;
   text-transform: uppercase;
 }
@@ -84,7 +87,7 @@ dl {
 
 dt {
   font-weight: bold;
-  padding: 3.5mm 0 0 0;
+  padding: 3mm 0 0 0;
   font-family: "Raleway", sans-serif;
 }
 
@@ -114,6 +117,8 @@ dd:last-child {
     padding: 0;
     background-image: none;
     background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
   }
 }
 
@@ -133,6 +138,12 @@ header, main, footer {
   border-top-right-radius: 50%;
 }
 
+@media print {
+  #photo {
+    background-color: transparent;
+  }
+}
+
 #info {
   display: inline-block;
   vertical-align: top;
@@ -150,11 +161,16 @@ header, main, footer {
   border-radius: 50%;
   border-color: #10b0ca;
   background-color: #3b4044;
-  background-image: url(../img/profile.jpg);
+  background-image: url(../img/profile3.jpg);
   background-size: cover;
   image-rendering: -webkit-optimize-contrast;
   -webkit-box-shadow: 0 0 8mm rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 8mm rgba(0, 0, 0, 0.4);
+  /*@media print {
+		background-color: transparent;
+		border: 2mm solid #afafaf;
+		box-shadow: none;
+	}*/
 }
 
 #about, #credits {
@@ -252,6 +268,12 @@ aside {
   background-color: #3b4044;
 }
 
+@media print {
+  aside {
+    background-color: transparent;
+  }
+}
+
 .skill {
   display: block;
   position: relative;
@@ -260,10 +282,15 @@ aside {
   color: #c3c3c3;
 }
 
-.ru, .ua, .en, .lt {
-  margin-left: 14mm;
+@media print {
+  .skill {
+    color: #3b4044;
+  }
 }
 
+/*.ru, .ua, .en, .lt {
+	margin-left: $basic * 4;
+}*/
 section {
   display: inline-block;
   vertical-align: top;
@@ -282,26 +309,28 @@ section {
   position: absolute;
   width: 10.5mm;
   height: 10.5mm;
-  padding-top: 7mm;
+  padding-top: 5.25mm;
   top: 0;
   left: -10.5mm;
   color: #10b0ca;
 }
 
-.logo {
-  width: 14mm;
-  display: inline-block;
-  vertical-align: top;
-  height: 14mm;
-  background: #10b0ca;
-}
-
+/*.logo {
+	width: $basic * 4;
+	display: inline-block;
+	vertical-align: top;
+	height: $basic * 4;
+	background: $color-main;
+}*/
 .position {
   display: inline-block;
   vertical-align: top;
+  font-size: 5.25mm;
 }
 
 .company {
+  font-style: italic;
+  font-weight: bold;
   display: inline-block;
   vertical-align: top;
 }
@@ -317,8 +346,23 @@ section {
 }
 
 .country {
+  margin-left: 5.25mm;
   display: inline-block;
   vertical-align: top;
+  position: relative;
+  color: #a0a0a0;
+}
+
+.country::before {
+  content: '\f041';
+  font-family: FontAwesome;
+  font-size: 5mm;
+  text-align: center;
+  position: absolute;
+  width: 3.5mm;
+  height: 3.5mm;
+  top: 0;
+  left: -4.375mm;
 }
 
 #educ h2 {
@@ -333,7 +377,7 @@ section {
   position: absolute;
   width: 10.5mm;
   height: 10.5mm;
-  padding-top: 7mm;
+  padding-top: 5.25mm;
   top: 0;
   left: -10.5mm;
   color: #10b0ca;
@@ -351,7 +395,7 @@ section {
   position: absolute;
   width: 10.5mm;
   height: 10.5mm;
-  padding-top: 7mm;
+  padding-top: 5.25mm;
   top: 0;
   left: -10.5mm;
   color: #10b0ca;

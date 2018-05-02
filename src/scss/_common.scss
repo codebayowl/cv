@@ -24,13 +24,16 @@ h1 {
 	font-size: $basic * 3;
 	line-height: $basic * 5;
 	text-indent: $basic;
+	/*@media print {
+		color: $color-dark;
+	}*/
 }
 
 h2 {
 	font-weight: 700;
 	font-size: 5mm;
 	margin: 0 $basic;
-	padding-top: $basic * 2;
+	padding-top: $basic * 1.5;
 	margin-left: $basic * 4;
 	//border-bottom: .5mm solid;
 	text-transform: uppercase;
@@ -71,7 +74,7 @@ dl {
 }
 dt {
 	font-weight: bold;
-	padding: $basic 0 0 0;
+	padding: 3mm 0 0 0;
 	font-family: $font-heading;
 }
 dd {

@@ -8,21 +8,22 @@ html(lang="en")
 					#profilephoto
 				#info
 					h1#name Dmytro Skydanenko
-					#about
-						//-h3 Motto
-						p Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ratione perferendis iure commodi excepturi non quidem maiores explicabo dignissimos sequi.
+					//-#about
+						//- h3 Motto
+						//-p Administratorei #[br]Natalijai Bondarenko
+						//-p Gyvenimo aprašymas (dėl kokybės kontroleriaus pareigų)
 					#credits
 						//-h3 Info
 						span.cred.birth 1984/12
 						span.cred.location Visaginas, LT
 						//-h3 Contact me:					
 						span.cred.cell +370 (657) 434 26 (LT)
-						//-span.cred.cell +380 (67) 550 53 50 (UA)
+						span.cred.cell +380 (67) 550 53 50 (UA)
 						span.cred.email dmytro.skydanenko@gmail.com
 						span.cred.skype skidann
 			main
 				aside
-					h4 skills
+					h4 Skills
 					span.skill Vector CG
 					span.skill Bitmap CG
 					span.skill Logo design
@@ -30,6 +31,9 @@ html(lang="en")
 					span.skill HTML (5/strict) + Pug(ex. Jade)
 					span.skill ES5 (Java Script)
 					span.skill jQuery
+					//- span.skill Internetinių puslapių sukurimas
+					//- span.skill Kompiuterinė grafika
+					span.skill Processes optimization
 					h4 Software
 					span.skill MS Office (Wd/Ex/Pp)
 					span.skill Windows / Linux
@@ -39,39 +43,62 @@ html(lang="en")
 					span.skill Autodesk Inventor
 					span.skill SolidWorks
 					span.skill Kompas 2D/3D
-					h4 languages
-					span.skill.ru Russian (native)
-					span.skill.ua Ukrainian (native)
-					span.skill.en English (B1)
-					span.skill.lt Lithuanian (B1)
+					h4 Languages
+					span.skill Russian (native)
+					span.skill Ukrainian (native)
+					span.skill English (B1)
+					span.skill Lithuanian (B1, cert. II cat.)
 					
 				section
 					article#exp
-						h2 Work expirience
+						h2 Work experiance
 						dl
-							.logo
+							//-.logo
+							dt.position Technologist
+							dd.posdescr
+								span.years 2016.10 - now
+								span.company UmegaGroup, AB (UmegaAgro deprt.)
+								span.country Lithuania, Utena
+								span.description Technologinio proceso ir kokybės išlaikymo gamyboje užtikrinimas, produkcijos sertifikavimas, bandymai, darbas su brėžinių/dokumentacija, jų tvarkymas.
+							//-.logo
+							dt.position Rinkodaros paslaugų tiekėjas
+							dd.posdescr
+								span.years 2013.08 - 2015.02
+								span.company Nova Poshta, LLC
+								span.country Ukraine, Poltava
+								span.description Tiekimo rinkodaros paslaugos, pristatymas priežiūra. Logistikos schemos optimizavimas. Buhalterinė apskaita.								
+							//-.logo
 							dt.position CG Designer
 							dd.posdescr
+								span.years 2009.04 - 2013.08
 								span.company PrintShop "Format"
-								span.years Apr 2009 - Aug 2013
-								span.description polygraphy design ang production; post-print working; souvenirs production (printing on fabric and ceramics, etc.); web-design; damaged photo treatment
-								span.country Ukraine
+								span.country Ukraine, Poltava
+								span.description Polygraphy design ang production; post-print working; souvenirs production (printing on fabric and ceramics, etc.); web-design; damaged photo treatment.
+								
+							//-.logo
+							dt.position Mechanics engineer
+							dd.posdescr
+								span.years 2007.09 - 2008.08
+								span.company ProfSteel Project, LLC
+								span.country Ukraine, Poltava
+								span.description Metalo profiliavimo įrangos surinkimas, montavimas ir reguliavimas; įmonės įrangos techninės priežiūros ir remonto paslaugų organizavimas.
+								
 					article#educ
-						h2 Education
+						h2 Išsilavinimas
 						dl
 							dt #[i.fa.fa-free-code-camp] freeCodeCamp
 							dd
-								span.spec Full Stack Web Development Certification (Computer Software Engineering)
-								span.years 2017 - present
+								span.spec Full Stack Web Development Certification (Software Dev.)
+								span.years 2017 - now
 							dt #[i.fa.fa-university] Poltava National Technical University
 							dd
-								span.spec Bachelor of Engineering (Electromechanical engineering)
+								span.spec Bachelor of Engineering (electromechanical automatization systems and electric gear)
 								span.years 2002 - 2010
 					article#cert
 						h2 Certificates and accomplishments
 						dl
 							dt #[i.fa.fa-id-card-o] Adobe Photoshop CS3 specialist (Cert.Id: 231923)
-							dd.place Baumann's Moscow State Technical College, 
-								span.years oct 2010 - present
-			footer
+							dd.place Baumann's Moscow State Technical College 
+								span.years 2010
+			//-footer
 		script(src="js/style.js")
