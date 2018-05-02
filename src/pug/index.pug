@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 html(lang="en")
-	include head
+	include _head
 	body
 		#wrapper
 			header
@@ -8,10 +8,9 @@ html(lang="en")
 					#profilephoto
 				#info
 					h1#name Dmytro Skydanenko
-					//-#about
-						//- h3 Motto
-						//-p Administratorei #[br]Natalijai Bondarenko
-						//-p Gyvenimo aprašymas (dėl kokybės kontroleriaus pareigų)
+					#about
+						h3 Quality manager position
+						p Visaginas factory
 					#credits
 						//-h3 Info
 						span.cred.birth 1984/12
@@ -24,13 +23,17 @@ html(lang="en")
 			main
 				aside
 					h4 Skills
-					span.skill Vector CG
-					span.skill Bitmap CG
-					span.skill Logo design
-					span.skill CSS3 + SCSS
-					span.skill HTML (5/strict) + Pug(ex. Jade)
-					span.skill ES5 (Java Script)
-					span.skill jQuery
+					span.skill CG design (vector/raster)
+					span.skill Front-end development
+					//- span.skill Bitmap CG
+					//- span.skill Logo design
+					//- span.skill CSS3 + Sass/SCSS
+					//- span.skill HTML (5/strict) + Pug(ex. Jade)
+					//- span.skill ES5/6 (Java Script)
+					//- span.skill jQuery
+					//- span.skill WP Rest API
+					//- span.skill Gulp
+					//- span.skill Node.js
 					//- span.skill Internetinių puslapių sukurimas
 					//- span.skill Kompiuterinė grafika
 					span.skill Processes optimization
@@ -51,29 +54,44 @@ html(lang="en")
 					
 				section
 					article#exp
-						h2 Work experiance
+						h2 Work experience
 						dl
 							//-.logo
 							dt.position Technologist
 							dd.posdescr
-								span.years 2016.10 - now
+								span.years 2016.10 - Present
 								span.company UmegaGroup, AB (UmegaAgro deprt.)
 								span.country Lithuania, Utena
-								span.description Technologinio proceso ir kokybės išlaikymo gamyboje užtikrinimas, produkcijos sertifikavimas, bandymai, darbas su brėžinių/dokumentacija, jų tvarkymas.
-							//-.logo
-							dt.position Rinkodaros paslaugų tiekėjas
+								span.description.en Technologinio proceso ir kokybės išlaikymo gamyboje užtikrinimas, produkcijos sertifikavimas, bandymai, darbas su brėžinių/dokumentacija, jų tvarkymas.
+								span.description.lt.hidden Technologinio proceso ir kokybės išlaikymo gamyboje užtikrinimas, produkcijos sertifikavimas, bandymai, darbas su brėžinių/dokumentacija, jų tvarkymas.
+							//- LT
+							dt.position.lt.hidden Rinkodaros paslaugų tiekėjas
+							dd.posdescr.hidden
+								span.years.hidden 2013.08 - 2015.02
+								span.company.hidden Nova Poshta, LLC
+								span.country.hidden Ukraine, Poltava
+								span.description.en.hidden Tiekimo rinkodaros paslaugos, pristatymas priežiūra. Logistikos schemos optimizavimas. Buhalterinė apskaita.
+								span.description.lt.hidden Tiekimo rinkodaros paslaugos, pristatymas priežiūra. Logistikos schemos optimizavimas. Buhalterinė apskaita.
+							//- EN
+							dt.position Procurement Manager
 							dd.posdescr
 								span.years 2013.08 - 2015.02
 								span.company Nova Poshta, LLC
 								span.country Ukraine, Poltava
-								span.description Tiekimo rinkodaros paslaugos, pristatymas priežiūra. Logistikos schemos optimizavimas. Buhalterinė apskaita.								
+								span.description.en Procurement and purchasing of consumable materials. Curation of branding / rebranding company's offices, warehouses, trucks, stationary, etc. Optimization of company's procurement scheme (logistics and accounting).
 							//-.logo
 							dt.position CG Designer
 							dd.posdescr
-								span.years 2009.04 - 2013.08
-								span.company PrintShop "Format"
-								span.country Ukraine, Poltava
-								span.description Polygraphy design ang production; post-print working; souvenirs production (printing on fabric and ceramics, etc.); web-design; damaged photo treatment.
+								//- EN
+								span.years.en 2009.04 - 2013.08
+								span.company.en PrintShop "Format"
+								span.country.en Ukraine, Poltava
+								span.description.en Polygraphy design ang production; post-print working; web-design; damaged photo treatment.
+								//- LT
+								span.years.lt.hidden 2009.04 - 2013.08
+								span.company.lt.hidden PrintShop "Format"
+								span.country.lt.hidden Ukraine, Poltava
+								span.description.lt.hidden Polygraphy design ang production; post-print working; web-design; damaged photo treatment.
 								
 							//-.logo
 							dt.position Mechanics engineer
@@ -81,24 +99,30 @@ html(lang="en")
 								span.years 2007.09 - 2008.08
 								span.company ProfSteel Project, LLC
 								span.country Ukraine, Poltava
-								span.description Metalo profiliavimo įrangos surinkimas, montavimas ir reguliavimas; įmonės įrangos techninės priežiūros ir remonto paslaugų organizavimas.
+								//- span.description.lt.hidden Metalo profiliavimo įrangos surinkimas, montavimas ir reguliavimas; įmonės įrangos techninės priežiūros ir remonto paslaugų organizavimas.
+								span.description.en Assembling, installing and adjusting of metal profiling mills; Directing on equipment reconditioning.
 								
 					article#educ
-						h2 Išsilavinimas
+						h2.lt.hidden Išsilavinimas
+						h2.en Education
 						dl
-							dt #[i.fa.fa-free-code-camp] freeCodeCamp
-							dd
-								span.spec Full Stack Web Development Certification (Software Dev.)
-								span.years 2017 - now
+							//- dt #[i.fa.fa-free-code-camp] freeCodeCamp
+							//- dd
+							//- 	span.spec Full Stack Web Development Certification (Software Dev.)
+							//- 	span.years 2017 - now
 							dt #[i.fa.fa-university] Poltava National Technical University
 							dd
 								span.spec Bachelor of Engineering (electromechanical automatization systems and electric gear)
 								span.years 2002 - 2010
 					article#cert
 						h2 Certificates and accomplishments
+						//- dl
+						//- 	dt #[i.fa.fa-id-card-o] Adobe Photoshop CS3 specialist (Cert.Id: 231923)
+						//- 	dd.place Baumann's Moscow State Technical College 
+						//- 		span.years 2010
 						dl
-							dt #[i.fa.fa-id-card-o] Adobe Photoshop CS3 specialist (Cert.Id: 231923)
-							dd.place Baumann's Moscow State Technical College 
-								span.years 2010
+							dt #[i.fa.fa-id-card-o] Basic pneumatic brake systems and ABS systems for trucks and trailers
+							dd.place WABCO academy 
+								span.years Apr. 2018 - Present
 			//-footer
 		script(src="js/style.js")
