@@ -297,8 +297,25 @@ footer {
 	background-color: $color-main;
 	color: $color-bg;
 }
+#links {
+	padding: $basic 0;
+	
+	text-align: right;
+}
+.externallink {
+	display: inline-block;
+	color: $color-neutral;
+	font-family: $font-heading;
+	font-size: $basic * 1.2;
+	text-decoration: none;
+	transition: color, .3s;
+	&:hover {
+		color: $color-main;
+	}
+}
 
 //modifyers
+
 
 .hidden {
 	display: none;
