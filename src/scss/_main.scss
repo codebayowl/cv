@@ -298,7 +298,7 @@ footer {
 	color: $color-bg;
 }
 #links {
-	padding: $basic 0;
+	padding: $basic/2 0 $basic 0;
 	
 	text-align: right;
 }
@@ -310,6 +310,9 @@ footer {
 	text-decoration: none;
 	transition: color, .3s;
 	&:hover {
+		color: $color-main;
+	}
+	@media print {
 		color: $color-main;
 	}
 }

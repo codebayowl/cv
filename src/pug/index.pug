@@ -9,13 +9,18 @@ html(lang="en")
 				#info
 					h1#name Dmytro Skydanenko
 					#about
-						p Position applied for:
-						h3 Adjuster of plastic's ecstrusion process
-						p (in Visaginas factory)
+						p.en.hidden Position applied for:
+						h3.en.hidden Adjuster of plastic's ecstrusion process
+						p.en.hidden (in Visaginas factory)
+						p.lt Pareigos:
+						h3.lt PLASTIKO EKSTRUZIJOS PROCESO DERINTOJUS
+						p.lt (Intersurgical padalinyje Visagine)
 					#credits
 						//-h3 Info
 						span.cred.birth 1984-12-24
-						span.cred.location Visaginas, LT (residence permit)
+						span.cred.location.en.hidden Visaginas, LT (residence permit)
+						span.cred.location.lt Visaginas, LT (leidimas gyventi)
+						span.cred.location.ru.hidden Висагинас, Литва (вид на жительство)
 						//-h3 Contact me:					
 						span.cred.cell +370 (657) 434 26 (LT)
 						span.cred.cell +380 (67) 550 53 50 (UA)
@@ -23,9 +28,12 @@ html(lang="en")
 						span.cred.skype skidann
 			main
 				aside
-					h4 Skills
-					span.skill CG design (vector/raster)
-					span.skill Front-end development
+					h4.en.hidden Skills
+					h4.lt Įgūdžiai
+					span.skill.lt KG dizainas (vektorius/rastras)
+					span.skill.lt WebDev
+					span.skill.en.hidden CG design (vector/raster)
+					span.skill.en.hidden Front-end development
 					//- span.skill Bitmap CG
 					//- span.skill Logo design
 					//- span.skill CSS3 + Sass/SCSS
@@ -37,8 +45,11 @@ html(lang="en")
 					//- span.skill Node.js
 					//- span.skill Internetinių puslapių sukurimas
 					//- span.skill Kompiuterinė grafika
-					span.skill Processes optimization
-					h4 Software
+					span.skill.en.hidden Processes optimization
+					span.skill.lt Procesų optimizavimas
+					h4.en.hidden Software
+					h4.lt Programinė įranga
+					h4.ru.hidden Программное обеспечение
 					span.skill MS Office (Wd/Ex/Pp)
 					span.skill Windows / Linux
 					span.skill Adobe Photoshop
@@ -47,85 +58,111 @@ html(lang="en")
 					span.skill Autodesk Inventor
 					span.skill SolidWorks
 					span.skill Kompas 2D/3D
-					h4 Languages
-					span.skill Russian (native)
-					span.skill Ukrainian (native)
-					span.skill English (B1)
-					span.skill Lithuanian (B1, cert. II cat.)
+					h4.en.hidden Languages
+					span.skill.en.hidden Russian (native)
+					span.skill.en.hidden Ukrainian (native)
+					span.skill.en.hidden English (B1)
+					span.skill.en.hidden Lithuanian (B1, cert. II cat.)
+					h4.lt Kalbos
+					span.skill.lt Rūsų (gimtoji)
+					span.skill.lt Ukrainiečių (gimtoji)
+					span.skill.lt Anglų (B1)
+					span.skill.lt Lietuvių (B1, II kat.)					
 					
 				section
 					article#exp
-						h2 Work experience
-						h2.hidden Darbo patirtis
+						h2.en.hidden Work experience
+						h2.lt Darbo patirtis
 						dl
 							//- LT
-							dt.position.lt.hidden Technologas
-							dd.posdescr.lt.hidden
+							dt.position.lt Technologas
+							dd.posdescr.lt
 								span.years 2016.10 - dabar
 								span.company Umega Group, AB (UmegaAgro padalinys)
 								span.country Lietuva, Utena
-								span.description Technologinio proceso ir kokybės išlaikymo gamyboje užtikrinimas, produkcijos sertifikavimas pagal EU 167/2013 reglamentą, bandymai, darbas su brėžinių/dokumentacija, jų tvarkymas.
+								span.description Technologinio proceso ir kokybės išlaikymo gamyboje užtikrinimas, produkcijos sertifikavimas pagal EU 167/2013 reglamentą, bandymai, darbas su brėžinių/dokumentacija, jų tvarkymas. Judėjimo sertifikato (EUR.1 formos) paruošimas.
 							//- EN
-							dt.position.en Technologist
-							dd.posdescr.en
+							dt.position.en.hidden Technologist
+							dd.posdescr.en.hidden
 								span.years 2016.10 - Present
 								span.company Umega Group, AB (UmegaAgro deprt.)
 								span.country Lithuania, Utena
 								span.description Technical documentation's preparation for vehicle sertification according to EU regulation No. 167/2013; stability tests performing and stability sertification; technical documentation creation and improvement, resolving of technical issues.
 								
 							//- LT
-							dt.position.lt.hidden Rinkodaros paslaugų tiekėjas
-							dd.posdescr.lt.hidden
+							dt.position.lt Rinkodaros paslaugų tiekėjas
+							dd.posdescr.lt
 								span.years 2013.08 - 2015.02
 								span.company Nova Poshta, LLC
-								span.country Ukraine, Poltava
-								span.description Tiekimo rinkodaros paslaugos, pristatymas priežiūra. Logistikos schemos optimizavimas. Buhalterinė apskaita.
+								span.country Ukraina, Poltava
+								span.description Rinkodaros paslaugų ir kanceliarinių / pakavimo medžiagos tiekimas, pristatymo koordinacija. Tenderių organizavimas. Rebrendingo darbų koordinacija ir atliekimo priežiūrą (apie 2000 ofisų + mašinos). Įmonės logistikos schemos optimizavimas. 
 							//- EN
-							dt.position.en Procurement Manager
-							dd.posdescr.en
+							dt.position.en.hidden Procurement Manager
+							dd.posdescr.en.hidden
 								span.years 2013.08 - 2015.02
 								span.company Nova Poshta, LLC
 								span.country Ukraine, Poltava
 								span.description Procurement and purchasing of consumable materials. Curation of branding / rebranding company's offices, warehouses, trucks, stationary, etc. Optimization of company's procurement scheme (logistics and accounting).
 							//-.logo
-							dt.position CG Designer
-							dd.posdescr
-								//- EN
-								span.years.en 2009.04 - 2013.08
-								span.company.en PrintShop "Format"
-								span.country.en Ukraine, Poltava
-								span.description.en Polygraphy design ang production; post-print working; web-design; damaged photo treatment.
-								//- LT
-								span.years.lt.hidden 2009.04 - 2013.08
-								span.company.lt.hidden Leidykla "Format"
-								span.country.lt.hidden Ukraina, Poltava
-								span.description.lt.hidden Polygraphy design ang production; post-print working; web-design; damaged photo treatment.
+							//- EN
+							dt.position.en.hidden CG Designer
+							dd.posdescr.en.hidden
+								span.years 2009.04 - 2013.08
+								span.company PrintShop "Format"
+								span.country Ukraine, Poltava
+								span.description Polygraphy design ang production; post-print working; web-design; damaged photo treatment.
+							//- LT
+							dt.position.lt Kompiuterinės grafikos dizaineris
+							dd.posdescr.lt
+								span.years 2009.04 - 2013.08
+								span.company Spaustuvė "Format"
+								span.country Ukraina, Poltava
+								span.description Poligrafinės produkcijos maketavimas, paruošimas ir spaudos darbai; darbai po spaudinimo; svėtainių sukurimas.
 								
 							//-.logo
-							dt.position Mechanics engineer
-							dd.posdescr
+							//- EN
+							dt.position.en.hidden Mechanics engineer
+							dd.posdescr.en.hidden
 								span.years 2007.09 - 2008.08
 								span.company ProfSteel Project, LLC
 								span.country Ukraine, Poltava
-								span.description.lt Metalo profiliavimo įrangos surinkimas, montavimas ir reguliavimas; įmonės įrangos techninės priežiūros ir remonto paslaugų organizavimas.
 								span.description.en.hidden Assembling, installing and adjusting of metal profiling mills; Directing on equipment reconditioning.
+							//- LT
+							dt.position.lt Mechanikos inžinerius
+							dd.posdescr.lt
+								span.years 2007.09 - 2008.08
+								span.company ProfSteel Project, LLC
+								span.country Ukraina, Poltava
+								span.description.lt Metalo profiliavimo įrangos surinkimas, montavimas ir derinimas; įmonės įrangos techninė priežiūrą ir remonto darbų organizavimas.
 								
 					article#educ
-						h2.lt.hidden Išsilavinimas
-						h2.en Education
+						h2.lt Išsilavinimas
+						h2.en.hidden Education
 						dl
 							//- dt #[i.fa.fa-free-code-camp] freeCodeCamp
 							//- dd
 							//- 	span.spec Full Stack Web Development Certification (Software Dev.)
 							//- 	span.years 2017 - now
-							dt #[i.fa.fa-university] Kharkiv National University of Radio Electronics (KNURE)
-							dd
+							dt.en.hidden #[i.fa.fa-university] Kharkiv National University of Radio Electronics (KNURE)
+							dd.en.hidden
 								span.spec Bachelor of Software Engineering ( C# / Java / ASP.NET / Git / html5 + Pug.js / css3 + SCSS / EcmaScript / Gulp.js)
 								span.years 2018 - now (grad. 2020)
-							dt #[i.fa.fa-university] Poltava National Technical University
-							dd
+
+							dt.lt #[i.fa.fa-university] Charkovo Nacionalinis Radijoelektronikos Universitetas
+							dd.lt
+								span.spec Programinės įrangos inžinerijos bakalauras ( C# / ASP.NET / Git / html5 / css3 / JavaScript / Gulp)
+								span.years 2018 - dabar (baig. 2020)
+
+							dt.en.hidden #[i.fa.fa-university] Poltava National Technical University
+							dd.en.hidden
 								span.spec Bachelor of Engineering (electromechanical automatization systems and electric drive)
 								span.years 2002 - 2010
+
+							dt.lt #[i.fa.fa-university] Poltavos Nacionalinis Techninis Universitetas
+							dd.lt
+								span.spec Elektromechanikos inžinerijos bakalauras (elektromechaniniės automatizavimo sistemos ir elektropavara)
+								span.years 2002 - 2010
+
 					article#cert.hidden
 						h2 Certificates and accomplishments
 						//- dl
@@ -137,6 +174,7 @@ html(lang="en")
 							dd.place WABCO academy / Vilnius
 								span.years Apr. 2018 - Present
 					article#links
-						a(href="https://www.linkedin.com/in/skydanenko/" target="_blank").externallink See more details here on #[i.fa.fa-linkedin-square] LinkedIn #[i.fa.fa-external-link]
-			//- footer
+						a(href="https://www.linkedin.com/in/skydanenko/" target="_blank").externallink See more: https://www.linkedin.com/in/skydanenko
+						//- details here on #[i.fa.fa-linkedin-square] LinkedIn #[i.fa.fa-external-link]
+			//- footer 
 		script(src="js/style.js")

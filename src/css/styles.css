@@ -354,7 +354,7 @@ footer {
   color: #ebebeb; }
 
 #links {
-  padding: 3.5mm 0;
+  padding: 1.75mm 0 3.5mm 0;
   text-align: right; }
 
 .externallink {
@@ -368,6 +368,9 @@ footer {
   transition: color, .3s; }
   .externallink:hover {
     color: #10b0ca; }
+  @media print {
+    .externallink {
+      color: #10b0ca; } }
 
 .hidden {
   display: none; }
