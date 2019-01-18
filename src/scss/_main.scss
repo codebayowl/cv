@@ -4,7 +4,7 @@
 #wrapper {
 	display: block;
 	margin: 0 auto;
-	width: 190mm;
+	width: 200mm;
 	height: 277mm;
 	background: $color-bg;
 	//outline: $test;
@@ -20,16 +20,16 @@
 
 header, main, footer {
 	display: inline-block;
-	width: 180mm;
-	margin-left: 10mm;
+	width: 200mm;
+	//margin-left: 10mm;
 	//outline: $test;
 }
 
 #photo {
 	display: inline-block;
 	vertical-align: top;
-	width: 60mm;
-	height: 60mm;
+	width: 265px;
+	height: 265px;
 	background-color: $color-dark;
 	border-top-left-radius: 50%;
 	border-top-right-radius: 50%;
@@ -41,14 +41,14 @@ header, main, footer {
 #info {
 	display: inline-block;
 	vertical-align: top;
-	width: 120mm;
+	width: 129mm;
 	height: 60mm;
 	//outline: $test;
 	overflow: hidden;
 }
 #profilephoto {
-	width: 50mm;
-	height: 50mm;
+	width: 60mm;
+	height: 60mm;
 	margin: 3mm;
 	border-style: solid;
 	border-width: 2mm;
@@ -69,7 +69,7 @@ header, main, footer {
 #about, #credits {
 	display: inline-block;
 	vertical-align: top;
-	width: 50mm;
+	width: 59mm;
 	//outline: $test;
 }
 #credits {
@@ -160,8 +160,8 @@ main {
 aside {
 	display: inline-block;
 	vertical-align: top;
-	width: 60mm;
-	height: 200mm;
+	width: 265px;
+	height: 212mm;
 	background-color: $color-dark;
 	@media print {
 		background-color: transparent;
@@ -170,20 +170,60 @@ aside {
 .skill {
 	display: block;
 	position: relative;
-	margin-left: $basic * 2;
+	margin-left: $basic * 3;
 	line-height: $basic * 2;
 	color: $color-light;
 	@media print {
 		color: $color-dark;
 	}
 }
+.skill{
+	position: relative;
+	&::before {
+		content: '\f244';
+		font-family: FontAwesome;
+		font-size: 3mm;
+		text-align: center;
+		position: absolute;
+		width: $basic * 3;
+		height: $basic * 3;
+		//padding-top: $basic * 1.5;
+		top: 0;
+		left: -$basic * 2.5;
+		color: $color-main;
+	}
+}
+.full {
+	&::before {
+		content: '\f240';
+	}
+}
+.three-quarters {
+	&::before {
+		content: '\f241';
+	}
+}
+.half {
+	&::before {
+		content: '\f242';
+	}
+}
+.one-quarter {
+	&::before {
+		content: '\f243';
+	}
+}
+
+
+
 /*.ru, .ua, .en, .lt {
 	margin-left: $basic * 4;
 }*/
 section {
 	display: inline-block;
 	vertical-align: top;
-	width: 120mm;
+	width: 129mm;
+	margin-top: -80px;
 }
 
 #exp h2{
@@ -202,6 +242,37 @@ section {
 		color: $color-main;
 	}
 }
+
+#objective h2{
+	position: relative;
+	&::before {
+		content: '\f192';
+		font-family: FontAwesome;
+		font-size: 6mm;
+		text-align: center;
+		position: absolute;
+		width: $basic * 3;
+		height: $basic * 3;
+		padding-top: $basic * 1.5;
+		top: 0;
+		left: -$basic * 3;
+		color: $color-main;
+	}
+}
+
+.objhead, .objdesc {
+	display: inline-block;
+	margin: 0 0 0 $basic * 3;
+	//-outline: $test;
+}
+.objhead {
+	font-weight: bold;
+	font-family: $font-heading;
+}
+.blockpos {
+	display: block;
+}
+
 /*.logo {
 	width: $basic * 4;
 	display: inline-block;
@@ -289,8 +360,9 @@ section {
 	display: block;
 }
 .years {
-	display: block;
+	// display: block;
 	color: $color-neutral;
+	padding: 0 1em;
 }
 footer {
 	height: 16.9mm;
