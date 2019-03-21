@@ -68,7 +68,7 @@ span {
   color: #3b4044; }
 
 dl {
-  margin: 0 10.5mm; }
+  margin: 0 0 0 10.5mm; }
 
 dt {
   font-weight: bold;
@@ -85,7 +85,7 @@ dd {
 #wrapper {
   display: block;
   margin: 0 auto;
-  width: 190mm;
+  width: 200mm;
   height: 277mm;
   background: #ebebeb;
   padding: 10mm;
@@ -101,14 +101,13 @@ dd {
 
 header, main, footer {
   display: inline-block;
-  width: 180mm;
-  margin-left: 10mm; }
+  width: 200mm; }
 
 #photo {
   display: inline-block;
   vertical-align: top;
-  width: 60mm;
-  height: 60mm;
+  width: 265px;
+  height: 265px;
   background-color: #3b4044;
   -webkit-border-top-left-radius: 50%;
           border-top-left-radius: 50%;
@@ -121,13 +120,13 @@ header, main, footer {
 #info {
   display: inline-block;
   vertical-align: top;
-  width: 120mm;
+  width: 129mm;
   height: 60mm;
   overflow: hidden; }
 
 #profilephoto {
-  width: 50mm;
-  height: 50mm;
+  width: 60mm;
+  height: 60mm;
   margin: 3mm;
   border-style: solid;
   border-width: 2mm;
@@ -150,7 +149,7 @@ header, main, footer {
 #about, #credits {
   display: inline-block;
   vertical-align: top;
-  width: 50mm; }
+  width: 59mm; }
 
 #credits {
   width: 70mm; }
@@ -228,8 +227,8 @@ main {
 aside {
   display: inline-block;
   vertical-align: top;
-  width: 60mm;
-  height: 200mm;
+  width: 265px;
+  height: 212mm;
   background-color: #3b4044; }
   @media print {
     aside {
@@ -238,12 +237,41 @@ aside {
 .skill {
   display: block;
   position: relative;
-  margin-left: 7mm;
+  margin-left: 10.5mm;
   line-height: 7mm;
   color: #c3c3c3; }
   @media print {
     .skill {
       color: #3b4044; } }
+
+.skill {
+  position: relative; }
+  .skill::before {
+    content: '\f244';
+    font-family: FontAwesome;
+    font-size: 3mm;
+    text-align: center;
+    position: absolute;
+    width: 10.5mm;
+    height: 10.5mm;
+    top: 0;
+    left: -8.75mm;
+    color: #10b0ca; }
+
+.full::before {
+  content: '\f240'; }
+
+.three-quarters::before {
+  content: '\f241'; }
+
+.half::before {
+  content: '\f242'; }
+
+.one-quarter::before {
+  content: '\f243'; }
+
+.check::before {
+  content: '\f046'; }
 
 /*.ru, .ua, .en, .lt {
 	margin-left: $basic * 4;
@@ -251,7 +279,8 @@ aside {
 section {
   display: inline-block;
   vertical-align: top;
-  width: 120mm; }
+  width: 129mm;
+  margin-top: -80px; }
 
 #exp h2 {
   position: relative; }
@@ -267,6 +296,32 @@ section {
     top: 0;
     left: -10.5mm;
     color: #10b0ca; }
+
+#objective h2 {
+  position: relative; }
+  #objective h2::before {
+    content: '\f192';
+    font-family: FontAwesome;
+    font-size: 6mm;
+    text-align: center;
+    position: absolute;
+    width: 10.5mm;
+    height: 10.5mm;
+    padding-top: 5.25mm;
+    top: 0;
+    left: -10.5mm;
+    color: #10b0ca; }
+
+.objhead, .objdesc {
+  display: inline-block;
+  margin: 0 0 0 10.5mm; }
+
+.objhead {
+  font-weight: bold;
+  font-family: "Raleway", sans-serif; }
+
+.blockpos {
+  display: block; }
 
 /*.logo {
 	width: $basic * 4;
@@ -345,8 +400,8 @@ section {
   display: block; }
 
 .years {
-  display: block;
-  color: #a0a0a0; }
+  color: #a0a0a0;
+  padding: 0 1em; }
 
 footer {
   height: 16.9mm;
