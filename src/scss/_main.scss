@@ -213,6 +213,11 @@ aside {
 		content: '\f243';
 	}
 }
+.check {
+	&::before {
+		content: '\f046';
+	}
+}
 
 
 

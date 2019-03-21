@@ -9,79 +9,100 @@ html(lang="en")
 				#info
 					h1#name Dmytro Skydanenko
 					#about
-						p.en Position applied for:
-						h3.en Jr. front-end dev.
+						//- p.en Position applied for:
+						h3.en.hidden Jr. front-end dev.
 						//-p.en (in Visaginas factory)
-						p.lt.hidden Pareigos:
-						h3.lt.hidden Gamybos srauto technologas / inžinierius
+						p.lt Pareigos:
+						h3.lt Informacinių technologijų skyriaus jaunesnysis programuotojas
 						//-p.lt (Intersurgical padalinyje Visagine)
 					#credits
 						//-h3 Info
 						//-span.cred.birth 1984-12-24
-						span.cred.location.en Visaginas, Lithuania
-						span.cred.location.lt.hidden Visaginas, LT (leidimas gyventi)
+						span.cred.location.en.hidden Visaginas, Lithuania
+						span.cred.location.lt Visaginas, LT
 						span.cred.location.ru.hidden Висагинас, Литва (вид на жительство)
 						//-h3 Contact me:					
 						span.cred.cell +370 (657) 434 26 (LT)
-						span.cred.cell +380 (67) 550 53 50 (UA)
+						span.cred.cell.hidden +380 (67) 550 53 50 (UA)
 						span.cred.email dmytro.skydanenko@gmail.com
 						span.cred.skype skidann
 
 			main
 				aside
-					h4.en Skills
-					h4.lt.hidden Įgūdžiai
-					span.skill.full.en Passionate about self-studying
-					span.skill.three-quarters.en Process optimization
-					span.skill.lt.hidden KG dizainas (vektorius/rastras)
-					span.skill.lt.hidden WebDev
-					span.skill.full.en CG design (vector/raster)
-					span.skill.three-quarters.en Project redesign/adaptation
-					span.skill.three-quarters.en Responsive mobile-first design
-					span.skill.half.en SVG optimization / animation
+					//- h4.en Skills
+					h4.lt Įgūdžiai
+					//- span.skill.full.en Passionate about self-studying
+					//- span.skill.three-quarters.en Process optimization
+					span.skill.lt.full KG dizainas (vektorinis/rastrinis)
+					span.skill.full HTML (5/strict) + Pug(ex. Jade)
+					span.skill.full CSS3 + Sass/SCSS
+					span.skill.lt.three-quarters WebDev
+					span.skill.three-quarters Gulp
+					span.skill.three-quarters Git
+					span.skill.three-quarters ES5/6 (JavaScript) / jQuery
+					span.skill.lt.half Software engineering
+					span.skill.lt.half SQL
+					span.skill.lt.one-quarter ASP.NET (C#, C++)
+					span.skill.one-quarter Vue JS
+					span.skill.one-quarter php (basics)
+					span.skill.check Trello
+					span.skill.lt.check.hidden Procesų optimizavimas
+					span.skill.lt.check.hidden Darbų koordinavimas
+					span.skill.lt.check.hidden Darbas komandoje
+					span.skill.lt.check.hidden Savimoka ir tobulejimas
+					
+					span.skill.lt.three-quarters.hidden WebDev
+					//- span.skill.full.en CG design (vector/raster)
+					//- span.skill.three-quarters.en Project redesign/adaptation
+					//- span.skill.three-quarters.en Responsive mobile-first design
+					//- span.skill.half.en SVG optimization / animation
 					//-span.skill.en SVG animation
-					span.skill.half.en SVG backward compatibility
+					//- span.skill.half.en SVG backward compatibility
 					//-span.skill Bitmap CG
 					//-span.skill Logo design
-					span.skill.full CSS3 + Sass/SCSS
-					span.skill.full HTML (5/strict) + Pug(ex. Jade)
-					span.skill.half Bootstrap
-					span.skill.one-quarter php (basics)
-					span.skill.three-quarters ES5/6 (JavaScript) / jQuery
-					span.skill.one-quarter Vue JS
-					span.skill.three-quarters Gulp
-					span.skill.half Git
-					span.skill.one-quarter Trello
+					
+					
+					span.skill.half.hidden Bootstrap
+					
+					
+					
+					
 					//-span.skill Node.js
 					
-					span.skill.lt.hidden Procesų optimizavimas
-					h4.en Software
-					h4.lt.hidden Programinė įranga
+					
+					h4.en.hidden Software
+					h4.lt Programinė įranga
 					h4.ru.hidden Программное обеспечение
-					//-span.skill MS Office (Wd/Ex/Pp)
-					//-span.skill Windows / Linux
+					span.skill.full MS Office (VBA)
+					span.skill.full CorelDraw
+					span.skill.full.hidden Windows / Linux
 					span.skill.full Adobe Photoshop
 					span.skill.half Adobe Illustrator
-					span.skill.full CorelDraw
-					span.skill.half GIMP/Inkscape
+					
+					span.skill.half.hidden GIMP/Inkscape
 					span.skill.half Autodesk Inventor
 					span.skill.half SolidWorks
 					//-span.skill Kompas 2D/3D
-					h4.en Languages
-					span.skill.full.en Russian (native)
-					span.skill.full.en Ukrainian (native)
-					span.skill.half.en English (B1)
-					span.skill.three-quarters.en Lithuanian (B1, cert. II cat.)
-					h4.lt.hidden Kalbos
-					span.skill.lt.hidden Rūsų (gimtoji)
-					span.skill.lt.hidden Ukrainiečių (gimtoji)
-					span.skill.lt.hidden Anglų (B1)
-					span.skill.lt.hidden Lietuvių (B1, II kat.)					
+					h4.en.hidden Languages
+					span.skill.full.en.hidden Russian (native)
+					span.skill.full.en.hidden Ukrainian (native)
+					span.skill.half.en.hidden English (B1)
+					span.skill.three-quarters.en.hidden Lithuanian (B1, cert. II cat.)
+					h4.lt Kalbos
+					span.skill.full.lt Rūsų (gimtoji)
+					span.skill.full.lt Ukrainiečių (gimtoji)
+					span.skill.half.lt Lietuvių (B1, II kat.)	
+					span.skill.half.lt Anglų (B1)
+					h4.lt Asmeninės savybės
+					span.skill.check.lt Atsakingumas
+					span.skill.check.lt Kruopštumas
+					span.skill.check.lt Punktualumas
+					span.skill.check.lt.hidden Neturių žalingų įpročių
 					
 				section
-					article#objective
-						h2.en Objective
-						span.objhead As a enthusiastic front-end developer I'm passionate about next...
+					article#objective.en.hidden
+						h2 Objective
+						span.objhead As an enthusiastic front-end developer I'm passionate about next...
 						dl
 							dt Markup skills:
 							dd
@@ -99,113 +120,126 @@ html(lang="en")
 								span.blockpos Vue.JS - enthusiast beginner :)
 							dt Last work:
 							dd
-								a(href="https://padekman.lt/" target="_blank").externallink padekman.lt
-
-
-
-					article#educ
-						h2.lt.hidden Išsilavinimas
-						h2.en Education
+								a(href="https://padekman.lt/" target="_blank").externallink http://padekman.lt
+					
+					article#objective.lt
+						h2 Tikslas
+						span.objhead Aš esu savimokęs  front-end developer, su didelė noro pasitobulėti ir praplėsti žinios sritį. Dabar studijuoju pagal "software engineer" programą universitete, noriu gauti darbo patirtis, susie su programavimo ASP.NET + SQL / Java + Oeacle DB.
 						dl
-							//- dt #[i.fa.fa-free-code-camp] freeCodeCamp
-							//- dd
-							//- 	span.spec Full Stack Web Development Certification (Software Dev.)
-							//- 	span.years 2017 - now
-							dt.en #[i.fa.fa-university] Kharkiv National University of Radio Electronics
-							dd.en
-								span.spec Bachelor of Software Engineering
-								span.years 2018 - now (grad. 2020)
+							
+							dt Paskutinio darbo pavizdys:
+							dd
+								a(href="https://padekman.lt/" target="_blank").externallink http://padekman.lt
 
-							dt.lt.hidden #[i.fa.fa-university] Charkovo Nacionalinis Radijoelektronikos Universitetas
-							dd.lt.hidden
-								span.spec Programinės įrangos inžinerijos bakalauras ( C++ / C# / ASP.NET / SQL / Git / html5 / css3 / JavaScript / Gulp)
-								span.years 2018 - dabar (baig. 2020)
-
-							dt.en #[i.fa.fa-university] Poltava National Technical University
-							dd.en
-								span.spec Bachelor of Engineering
-								span.years 2002 - 2010
-
-							dt.lt.hidden #[i.fa.fa-university] Poltavos Nacionalinis Techninis Universitetas
-							dd.lt.hidden
-								span.spec Elektromechanikos inžinerijos bakalauras (elektromechaniniės automatizavimo sistemos ir elektropavara)
-								span.years 2002 - 2010
 					article#exp
-						h2.en Work experience
-						h2.lt.hidden Darbo patirtis
+						h2.en.hidden Work experience
+						h2.lt Darbo patirtis
 						dl
 							//- LT
-							dt.position.lt.hidden Technologas
-							dd.posdescr.lt.hidden
-								span.years 2016.10 - dabar
-								span.company Umega Group, AB (UmegaAgro padalinys)
+							dt.position.lt Technologas
+							dd.posdescr.lt
+								
+								span.company Umega Group, AB
 								span.country Lietuva, Utena
-								span.description Technologinio proceso ir kokybės išlaikymo gamyboje užtikrinimas, produkcijos sertifikavimas pagal EU 167/2013 reglamentą, bandymai, darbas su brėžinių/dokumentacija, jų tvarkymas. Judėjimo sertifikato (EUR.1 formos) paruošimas.
+								span.years 2016.10 - dabar
+								span.description • Technologinio proceso ir kokybės išlaikymo gamyboje užtikrinimas; #[br] • Produkcijos paruošymo europinio sertifikavimui (EU 167/2013 reg.) darbų koordinacija ir tikrinimas gamyboje; #[br] • Bandymai, darbas su brėžinių/dokumentaciją, jų tvarkymas. #[br] • Įmonės informacinio sistemos derinimas / tvarkymas (VBA); #[br] • Judėjimo sertifikato (EUR.1 formos) paruošimas.
 							//- EN
-							dt.position.en Technologist
-							dd.posdescr.en
+							dt.position.en.hidden Technologist
+							dd.posdescr.en.hidden
 								
 								span.company Umega Group, AB
 								span.country Lithuania, Utena
 								span.years 2016.10 - Present
-								span.description.hidden Technical documentation's preparation for vehicle sertification (EU reg. No. 167/2013); technical documentation creation and improvement, resolving of technical issues.
+								span.description Technical documentation's preparation for vehicle sertification (EU reg. No. 167/2013); technical documentation creation and improvement, resolving of technical issues.
 								
 							//- LT
-							dt.position.lt.hidden Rinkodaros paslaugų tiekėjas
-							dd.posdescr.lt.hidden
+							dt.position.lt Rinkodaros paslaugų tiekėjas
+							dd.posdescr.lt
 								
 								span.company Nova Poshta, LLC
 								span.country Ukraina, Poltava
 								span.years 2013.08 - 2015.02
 								span.description Rinkodaros paslaugų ir kanceliarinių / pakavimo medžiagos tiekimas, pristatymo koordinacija. Tenderių organizavimas. Rebrendingo darbų koordinacija ir atliekimo priežiūrą (apie 2000 ofisų + mašinos). Įmonės logistikos schemos optimizavimas. 
 							//- EN
-							dt.position.en Procurement Manager
-							dd.posdescr.en
+							dt.position.en.hidden Procurement Manager
+							dd.posdescr.en.hidden
 								
 								span.company Nova Poshta, LLC
 								span.country Ukraine, Poltava
 								span.years 2013.08 - 2015.02
-								span.description.hidden Procurement and purchasing of consumable materials. Curation of branding / rebranding company's offices, warehouses, trucks, stationary, etc. Optimization of company's procurement scheme (logistics and accounting).
+								span.description Procurement and purchasing of consumable materials. Curation of branding / rebranding company's offices, warehouses, trucks, stationary, etc. Optimization of company's procurement scheme (logistics and accounting).
 							//-.logo
 							//- EN
-							dt.position.en CG Designer
-							dd.posdescr.en
+							dt.position.en.hidden CG Designer
+							dd.posdescr.en.hidden
 								
 								span.company PrintShop "Format"
 								span.country Ukraine, Poltava
 								span.years 2009.04 - 2013.08
-								span.description.hidden Polygraphy design ang production; post-print working; web-design; damaged photo treatment.
+								span.description Polygraphy design ang production; post-print working; web-design; damaged photo treatment.
 							//- LT
-							dt.position.lt.hidden Kompiuterinės grafikos dizaineris
-							dd.posdescr.lt.hidden
-								span.years 2009.04 - 2013.08
+							dt.position.lt Kompiuterinės grafikos dizaineris
+							dd.posdescr.lt
+								
 								span.company Spaustuvė "Format"
 								span.country Ukraina, Poltava
-								span.description Poligrafinės produkcijos maketavimas, paruošimas ir spaudos darbai; darbai po spaudinimo; svėtainių sukurimas.
+								span.years 2009.04 - 2013.08
+								span.description.hidden Poligrafinės produkcijos maketavimas, paruošimas ir spaudos darbai; darbai po spaudinimo; stinkalapių kurimas.
 								
 							//-.logo
 							//- EN
-							dt.position.en Mechanics engineer
-							dd.posdescr.en
+							dt.position.en.hidden Mechanics engineer
+							dd.posdescr.en.hidden
 								
 								span.company ProfSteel Project, LLC
 								span.country Ukraine, Poltava
 								span.years 2007.09 - 2008.08
-								span.description.en.hidden Assembling, installing and adjusting of metal profiling mills; Directing on equipment reconditioning.
+								span.description.en Assembling, installing and adjusting of metal profiling mills; Directing on equipment reconditioning.
 							//- LT
-							dt.position.lt.hidden Mechanikos inžinerius
-							dd.posdescr.lt.hidden
+							dt.position.lt Mechanikos inžinerius
+							dd.posdescr.lt
 								
 								span.company ProfSteel Project, LLC
 								span.country Ukraina, Poltava
 								span.years 2007.09 - 2008.08
-								span.description.lt Metalo profiliavimo įrangos surinkimas, montavimas ir derinimas; įmonės įrangos techninė priežiūrą ir remonto darbų organizavimas.
+								span.description.lt.hidden Metalo profiliavimo įrangos surinkimas, montavimas ir derinimas; įmonės įrangos techninė priežiūrą ir remonto darbų organizavimas.
+					article#educ
+						h2.lt Išsilavinimas
+						h2.en.hidden Education
+						dl
+							//- dt #[i.fa.fa-free-code-camp] freeCodeCamp
+							//- dd
+							//- 	span.spec Full Stack Web Development Certification (Software Dev.)
+							//- 	span.years 2017 - now
+							dt.en.hidden #[i.fa.fa-university] Kharkiv National University of Radio Electronics
+							dd.en.hidden
+								span.spec Bachelor of Software Engineering
+								span.years 2018 - now (grad. 2020)
+
+							dt.lt #[i.fa.fa-university] Charkovo Nacionalinis Radijoelektronikos Universitetas
+							dd.lt
+								span.spec Programinės įrangos inžinerijos bakalauras ( C++ / C# / Java / Assembler (MASM/FASM) / ASP.NET / SQL / Git / html5 / css3 / JavaScript / Node.js)
+								span.years 2018 - dabar
+
+							dt.en.hidden #[i.fa.fa-university] Poltava National Technical University
+							dd.en.hidden
+								span.spec Bachelor of Engineering
+								span.years 2002 - 2010
+
+							dt.lt #[i.fa.fa-university] Poltavos Nacionalinis Techninis Universitetas
+							dd.lt
+								span.spec Elektromechanikos inžinerijos bakalauras (elektromechaniniės automatizavimo sistemos ir elektropavara)
+								span.years 2002 - 2010
 								
 					
 
-					article#cert
-						h2 Certificates and accomplishments
+					article#cert.hidden
+						h2 Sertifikatai ir kursai
 						span.objdesc Advanced&nbsp;SVG&nbsp;Animation | Motion&nbsp;Design&nbsp;with&nbsp;CSS | UX&nbsp;Foundation:&nbsp;Accessibility | User&nbsp;Experience&nbsp;for&nbsp;Web&nbsp;Designers
+						dl
+							dt #[i.fa.fa-id-card-o] Basinės pneumatinių stabdžių sistemos ir ABS sistemos sunkvežiams ir priekabams
+							dd.place WABCO akademija / Vilnius
+								span.years Bal. 2018
 						//- dl
 						//- 	dt #[i.fa.fa-id-card-o] Adobe Photoshop CS3 specialist (Cert.Id: 231923)
 						//- 	dd.place Baumann's Moscow State Technical College 
@@ -222,7 +256,7 @@ html(lang="en")
 						//- 	dd.place by Colt Steele
 						//- 		//- span.years 2018
 					article#links
-						a(href="https://www.linkedin.com/in/skydanenko/" target="_blank").externallink See more: https://www.linkedin.com/in/skydanenko
+						a(href="https://www.linkedin.com/in/skydanenko/" target="_blank").externallink Daugiau: https://www.linkedin.com/in/skydanenko
 						//- details here on #[i.fa.fa-linkedin-square] LinkedIn #[i.fa.fa-external-link]
 			//- footer 
 		script(src="js/style.js")
