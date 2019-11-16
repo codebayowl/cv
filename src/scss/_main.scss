@@ -42,8 +42,9 @@ header, main, footer {
 	display: inline-block;
 	vertical-align: top;
 	width: 129mm;
-	height: 60mm;
-	//outline: $test;
+	height: 40mm;
+	transform: translateY(-5mm);
+	// outline: $test;
 	overflow: hidden;
 }
 #profilephoto {
@@ -59,11 +60,11 @@ header, main, footer {
 	background-size: cover;
 	image-rendering: -webkit-optimize-contrast;
 	box-shadow: 0 0 8mm rgba(0,0,0,.4);
-	/*@media print {
-		background-color: transparent;
-		border: 2mm solid #afafaf;
+	@media print {
+		//background-color: transparent;
+		//border: 2mm solid #afafaf;
 		box-shadow: none;
-	}*/
+	}
 }
 //#name {}
 #about, #credits {
@@ -228,7 +229,7 @@ section {
 	display: inline-block;
 	vertical-align: top;
 	width: 129mm;
-	margin-top: -80px;
+	margin-top: -150px;
 }
 
 #exp h2{
