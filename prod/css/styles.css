@@ -121,7 +121,10 @@ header, main, footer {
   display: inline-block;
   vertical-align: top;
   width: 129mm;
-  height: 60mm;
+  height: 40mm;
+  -webkit-transform: translateY(-5mm);
+      -ms-transform: translateY(-5mm);
+          transform: translateY(-5mm);
   overflow: hidden; }
 
 #profilephoto {
@@ -139,12 +142,11 @@ header, main, footer {
           background-size: cover;
   image-rendering: -webkit-optimize-contrast;
   -webkit-box-shadow: 0 0 8mm rgba(0, 0, 0, 0.4);
-          box-shadow: 0 0 8mm rgba(0, 0, 0, 0.4);
-  /*@media print {
-		background-color: transparent;
-		border: 2mm solid #afafaf;
-		box-shadow: none;
-	}*/ }
+          box-shadow: 0 0 8mm rgba(0, 0, 0, 0.4); }
+  @media print {
+    #profilephoto {
+      -webkit-box-shadow: none;
+              box-shadow: none; } }
 
 #about, #credits {
   display: inline-block;
@@ -280,7 +282,7 @@ section {
   display: inline-block;
   vertical-align: top;
   width: 129mm;
-  margin-top: -80px; }
+  margin-top: -150px; }
 
 #exp h2 {
   position: relative; }
